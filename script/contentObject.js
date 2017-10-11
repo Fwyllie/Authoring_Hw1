@@ -6,7 +6,20 @@ var dynamicContent = {
 
 			images : [
 				"spring_1.jpg",
-				"spring_2.jpg"
+				"spring_2.jpg",
+				"spring_3.jpg",
+				"spring_4.jpg",
+				"spring_5.jpg",
+				"spring_6.jpg"
+			],
+
+			ImageDescription : [
+				"these are some butterflies",
+				"This picture is okay",
+				"Pretty Flowers",
+				"Butterfly!! NICE",
+				"Two Birds",
+				"This picture is more than okay"
 			]
 		},
 
@@ -17,7 +30,18 @@ var dynamicContent = {
 
 			images : [
 				"summer_1.jpg",
-				"summer_2.jpg"
+				"summer_2.jpg",
+				"summer_3.jpg",
+				"summer_4.jpg",
+				"summer_5.jpg",
+				"summer_6.jpg"
+			],
+			ImageDescription : [
+				"Chairs on the beach",
+				"Cute pupper in a hammock",
+				"Sandy Beach",
+				"Fun in the sun",
+				"Summer treats"
 			]
 		},
 
@@ -28,7 +52,19 @@ var dynamicContent = {
 
 			images : [
 				"autumn_1.jpg",
-				"autumn_2.jpg"
+				"autumn_2.jpg",
+				"autumn_3.jpg",
+				"autumn_4.jpg",
+				"autumn_5.jpg",
+				"autumn_6.jpg"
+			],
+			ImageDescription : [
+				"Orange leaves fallen",
+				"Sunflowers and pumpkins",
+				"Autumn Sun",
+				"Steps with fallen leaves",
+				"Deer in the forest",
+				"Maple Leaf changes colour"
 			]
 		},
 
@@ -39,7 +75,19 @@ var dynamicContent = {
 
 			images : [
 				"winter_1.jpg",
-				"winter_2.jpg"
+				"winter_2.jpg",
+				"winter_3.jpg",
+				"winter_4.jpg",
+				"winter_5.jpg",
+				"winter_6.jpg"
+			],
+			ImageDescription : [
+				"Snow in the woods",
+				"Cute Snowman",
+				"Snowflake",
+				"Snowfall in Paris",
+				"igloo",
+				"Cold Cold Bench"
 			]
 		}
 	};

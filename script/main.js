@@ -26,9 +26,15 @@ function changeElements(){
 		newSubImg.classList.add('thumb');
 		//add a source
 		newSubImg.src = "images/" + objectIndex.images[index];
+
+		newSubImg.dataset.index = index;
+
 		//add it to the page
+		newSubImg.addEventListener('click', function() { popLightbox(index, objectIndex); }, false);
+
 		subImages.appendChild(newSubImg);
 	});
+
 
 	//remove the last css element applied
 	theSubHead.classList.remove(appliedClass);
@@ -50,11 +56,36 @@ theImages.forEach(function(element, index){
 //Loop through the images
 });
 
+function popLightbox(currentIndex, currentObject) {
+		//debugger;
+		let lightbox = document.querySelector('.lightbox');
+		lightbox.style.display = "block";
+		window.scrollTo(0,0);
+    document.body.style.overflow = "hidden";
+
+		//let lightbox = document.querySelector('.lightbox');
+		let lightboxImg = lightbox.querySelector('img');
+		let lightboxDesc = lightbox.querySelector('p');
+		let lightboxClose = lightbox.querySelector('.close-lightbox');
+
+		lightboxImg.src = "images/" + currentObject.images[currentIndex];
+		lightboxDesc.innerHTML = currentObject.ImageDescription[currentIndex];
+
+		lightboxClose.addEventListener('click', closelightbox ,false);
+	}
+
+
+function closelightbox(){
+  console.log("close lightbox");
+  let lightbox = document.querySelector('.lightbox');
+  lightbox.style.display = "none";
+  document.body.style.overflow = "visible";
+  //lightboxImg.style.display = "none";
+  //lightboxDesc.style.display = "none";
+}
 
 	theSubHead.firstChild.nodeValue = dynamicContent['spring'].headline;
 	theSeasonText.firstChild.nodeValue = dynamicContent['spring'].text;
 	theHeading.classList.add('spring');
 
  })();
-
-
